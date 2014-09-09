@@ -12,6 +12,12 @@
 		3EDF724119BD8336002CB528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDF723F19BD8336002CB528 /* Main.storyboard */; };
 		3EDF724319BD8336002CB528 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDF724219BD8336002CB528 /* Images.xcassets */; };
 		3EDF724F19BD8336002CB528 /* CardGameTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF724E19BD8336002CB528 /* CardGameTestTests.swift */; };
+		3EDF725C19BD857F002CB528 /* CardGameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF725B19BD857F002CB528 /* CardGameObject.swift */; };
+		3EDF725E19BD859B002CB528 /* CardGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF725D19BD859B002CB528 /* CardGameManager.swift */; };
+		3EDF726419BD8650002CB528 /* CardGamePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF726319BD8650002CB528 /* CardGamePlayer.swift */; };
+		3EDF726819BD86A5002CB528 /* CardGameTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF726719BD86A5002CB528 /* CardGameTable.swift */; };
+		3EDF726A19BD86B7002CB528 /* CardGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF726919BD86B7002CB528 /* CardGameCard.swift */; };
+		3EDF726C19BD91BB002CB528 /* CardGameCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF726B19BD91BB002CB528 /* CardGameCardSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 		3EDF724819BD8336002CB528 /* CardGameTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardGameTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDF724D19BD8336002CB528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EDF724E19BD8336002CB528 /* CardGameTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameTestTests.swift; sourceTree = "<group>"; };
+		3EDF725B19BD857F002CB528 /* CardGameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameObject.swift; path = Classes/CardGameObject.swift; sourceTree = "<group>"; };
+		3EDF725D19BD859B002CB528 /* CardGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameManager.swift; path = Classes/CardGameManager.swift; sourceTree = "<group>"; };
+		3EDF726319BD8650002CB528 /* CardGamePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGamePlayer.swift; path = Classes/CardGamePlayer.swift; sourceTree = "<group>"; };
+		3EDF726719BD86A5002CB528 /* CardGameTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameTable.swift; path = Classes/CardGameTable.swift; sourceTree = "<group>"; };
+		3EDF726919BD86B7002CB528 /* CardGameCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameCard.swift; path = Classes/CardGameCard.swift; sourceTree = "<group>"; };
+		3EDF726B19BD91BB002CB528 /* CardGameCardSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameCardSet.swift; path = Classes/CardGameCardSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				3EDF723B19BD8336002CB528 /* AppDelegate.swift */,
-				3EDF723D19BD8336002CB528 /* ViewController.swift */,
 				3EDF723F19BD8336002CB528 /* Main.storyboard */,
+				3EDF723D19BD8336002CB528 /* ViewController.swift */,
+				3EDF725A19BD847A002CB528 /* Classes */,
 				3EDF724219BD8336002CB528 /* Images.xcassets */,
 				3EDF723919BD8336002CB528 /* Supporting Files */,
 			);
@@ -107,6 +120,19 @@
 				3EDF724D19BD8336002CB528 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EDF725A19BD847A002CB528 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3EDF725B19BD857F002CB528 /* CardGameObject.swift */,
+				3EDF725D19BD859B002CB528 /* CardGameManager.swift */,
+				3EDF726719BD86A5002CB528 /* CardGameTable.swift */,
+				3EDF726319BD8650002CB528 /* CardGamePlayer.swift */,
+				3EDF726B19BD91BB002CB528 /* CardGameCardSet.swift */,
+				3EDF726919BD86B7002CB528 /* CardGameCard.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDF725C19BD857F002CB528 /* CardGameObject.swift in Sources */,
 				3EDF723E19BD8336002CB528 /* ViewController.swift in Sources */,
+				3EDF726C19BD91BB002CB528 /* CardGameCardSet.swift in Sources */,
 				3EDF723C19BD8336002CB528 /* AppDelegate.swift in Sources */,
+				3EDF726419BD8650002CB528 /* CardGamePlayer.swift in Sources */,
+				3EDF725E19BD859B002CB528 /* CardGameManager.swift in Sources */,
+				3EDF726A19BD86B7002CB528 /* CardGameCard.swift in Sources */,
+				3EDF726819BD86A5002CB528 /* CardGameTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CardGameTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -337,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CardGameTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
